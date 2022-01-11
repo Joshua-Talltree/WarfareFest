@@ -371,3 +371,18 @@ h3 {
     background-position: center;
     background-size: cover;
 }
+
+#mission-statement {
+    display: flex;
+    justify-content: center;
+}
+
+#home-logo {
+    background: url(/images/WarFareFest.jpeg);
+    width: 2000px;
+    height: 2000px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 500;
+}
