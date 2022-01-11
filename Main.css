@@ -351,6 +351,7 @@ h3 {
 
 #section1 {
     background-image: url(images/worship1.jpg);
+    padding: 6% 0 0 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -374,14 +375,16 @@ h3 {
 
 #mission-statement {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 #home-logo {
-    background: url(/images/WarFareFest.jpeg);
-    width: 2000px;
-    height: 2000px;
-    position: relative;
+    background-image: url(/images/WarFareFest.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 650px;
+    height: 406px;
+    position: unset;
     top: 10px;
     left: 10px;
     z-index: 500;

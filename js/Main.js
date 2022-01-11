@@ -13,14 +13,12 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-    // sectionsColor: ['#B8AE9C', '#348899', '#F2AE72'],
-    background: ['url(images/worship1.jpg)', 'url(images/worship2.jpg)', 'url(images/worship3.png)'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
     navigation: true,
     slidesNavigation: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection'],
+    anchors: ['section1', 'section2', 'section3'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
@@ -38,7 +36,7 @@ $('#fullpage').fullpage({
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-        if(anchorLink === 'fifthSection' && slideIndex === 1) {
+        if(anchorLink === 'section3' && slideIndex === 1) {
             $.fn.fullpage.setAllowScrolling(false, 'up');
             $header_top.css('background', 'transparent');
             $nav.css('background', 'transparent');
@@ -56,7 +54,7 @@ $('#fullpage').fullpage({
     },
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-        if(anchorLink === 'fifthSection' && slideIndex === 1) {
+        if(anchorLink === 'section3' && slideIndex === 1) {
             $.fn.fullpage.setAllowScrolling(true, 'up');
             $header_top.css('background', 'rgba(0, 47, 77, .3)');
             $nav.css('background', 'rgba(0, 47, 77, .25)');
