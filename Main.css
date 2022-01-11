@@ -347,17 +347,27 @@ h3 {
         padding: 3px;
     }
 
-    #section1 {
-        background-image: url(images/worship1.jpg);
-    }
+}
 
-    #section2 {
-        background-image: url(images/worship2.jpg);
-        padding: 6% 0 0 0;
-    }
+#section1 {
+    background-image: url(images/worship1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-    #section3 {
-        background-image: url(images/worship3.png);
-        padding: 6% 0 0 0;
-    }
+#section2 {
+    background-image: url(images/worship2.jpg);
+    padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#section3 {
+    background-image: url(images/worship3.png);
+    padding: 6% 0 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
